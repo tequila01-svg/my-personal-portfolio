@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navigation-->
+    <nav>
+        <div class="logo">
+            <a href="#home"><img src="logo.jpeg" alt="WebDesigner logo" width="150px" height="150px"></a>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform your ideas into stunning websites </h1>
+            <p> Affordable, responsive and creative web designs tailored for your business </p>
+            <a href="#contact" class="cta-btn">Get started today</a>
+        </div>
+    </section>
+
+    <!--About section-->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>HI, I'm a passionate web designer with over 2 years of experience. I specialize in creating responsive, user-friendly websites that help businesses stand out online</p>
+        <p> My mission is to bring your vision to life with creativity and attention to detail.</p>
+    </section>
+
+    <!--Services section-->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Custom Website Design</h3>
+                <p> Unique, tailor made websites that suit your brand.</p>
+            </div>
+            <div class="service-card">
+                <h3>E-commerce Solutions</h3>
+                <p>Building online stores that drive sales</p>
+            </div>
+            <div class="service-card">
+                <h3>UI/UX design</h3>
+                <p>Crafting user-friendly interfaces for an optimal user experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio Section-->
+    <section id="Portfolio" class="Portfolio">
+        <h2>portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="project 1">
+                <p> project 1-E-commerce Site</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="project 2">
+                <p> project 2-porfolio website</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="project 3">
+                <p> project 3-Corporate website</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <section id="Contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xblrepav" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2024 WebDesigner| All Rights Reserved </p>
+    </footer>
+</body>
+</html>

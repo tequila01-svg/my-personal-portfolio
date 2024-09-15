@@ -1,0 +1,196 @@
+/* background image*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('background.jpeg')no-repeat center center fixed;
+    background-size: cover;
+/* covering the entire background*/
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/*Navigation*/
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.logo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin:0 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+/*Hero section*/
+.hero{
+    height: 100vh;
+    background: url('hero-image.jpg')no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.cta-btn{
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.ctn-btn:hover{
+    background-color: #ff6347;
+}
+/*About Section*/
+.about {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+about h2{
+    margin-bottom: 20px;
+}
+/*Service section*/
+.services{
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+.service-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.service-card{
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.service-card h3{
+    margin-bottom: 10px;
+}
+/*portfolio*/
+.portfolio{
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.portfolio-grid{
+    display: flex;
+    justify-content: space-around;
+}
+.portfolio-item{
+    width: 30%;
+}
+.portfolio-item img{
+    width: 100%;
+    height: auto;
+}
+/*contact section*/
+.contact{
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+form label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #555;
+}
+/*footer*/
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/*mobile(max width 768px)*/
+@media screen and (max-width:768px){
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+.hero h1{
+    font-size: 32px;
+}
+.service-cards, .portfolio-grid{
+    flex-direction: column;
+}
+.service-card, .portfolio-item{
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
+/*Hero animation*/
+@keyframes fadeln{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.hero-content{
+    animation: fadeln 2s ease-in-out;
+}
