@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | web designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpeg" alt="WebDesigner logo" width="150px" height="150px"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <!--contact info-->
+        <div class="contact-info">
+            <p>Feel free to get in touch via email or phone, or fill out the form below</p>
+            <p><strong>Email:</strong><a href="malito:onifadeayobami008@gmail.com">onifadeayobami008@gmail.com</a></p>
+            <p><strong>Phone:</strong>+2349125403817</p>
+
+        <!--socia media links-->
+            <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank">instagram</a><br><hr>
+            <a href="https://www.linkedin.com" target="_blank">linkedin</a>
+            </div>
+        </div>
+
+        <!--contact form-->
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name"> Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+
+    <a href="index.html" class="back-home-btn">back to home</a>
+<!--footer-->
+<footer>
+    <p>&copy; 2024 WebDesigner| All Rights Reserved </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
