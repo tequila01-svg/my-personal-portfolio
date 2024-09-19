@@ -107,6 +107,15 @@ about h2{
 .service-card h3{
     margin-bottom: 10px;
 }
+.service-card-1{
+    background-image: url(images/e-commerce.jpeg);
+}
+.service-card-2{
+    background-image: url(images/website\ design.jpeg);
+}
+.service-card-3{
+    background-image: url(images/\ ui\ ux\ design\ .jpeg);
+}
 /*portfolio*/
 .portfolio{
     padding: 50px;
