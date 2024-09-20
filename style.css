@@ -87,12 +87,12 @@ nav ul li a:hover{
 about h2{
     margin-bottom: 20px;
 }
-/*Service section*/
+/*Service section
 .services{
     padding: 50px;
     background-color: #fff;
     text-align: center;
-}
+}*/
 .service-cards{
     display: flex;
     justify-content: space-around;
@@ -108,14 +108,31 @@ about h2{
     margin-bottom: 10px;
 }
 .service-card-1{
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url(images/e-commerce.jpeg);
 }
 .service-card-2{
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url(images/website\ design.jpeg);
 }
 .service-card-3{
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url(images/\ ui\ ux\ design\ .jpeg);
 }
+/**button**/
+
 /*portfolio*/
 .portfolio{
     padding: 50px;
@@ -192,15 +209,7 @@ footer{
     margin-bottom: 20px;
 }
 }
-/*Hero animation*/
-@keyframes fadeln{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 .hero-content{
     animation: fadeln 2s ease-in-out;
 }
