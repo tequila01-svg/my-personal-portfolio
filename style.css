@@ -87,12 +87,12 @@ nav ul li a:hover{
 about h2{
     margin-bottom: 20px;
 }
-/*Service section
+/*Service section*/
 .services{
     padding: 50px;
     background-color: #fff;
     text-align: center;
-}*/
+}
 .service-cards{
     display: flex;
     justify-content: space-around;
@@ -114,6 +114,7 @@ about h2{
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url(images/e-commerce.jpeg);
+    background-size: cover;
 }
 .service-card-2{
     width: 30%;
@@ -122,6 +123,8 @@ about h2{
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url(images/website\ design.jpeg);
+    background-size: cover;
+    color: #ddd;
 }
 .service-card-3{
     width: 30%;
@@ -130,6 +133,8 @@ about h2{
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url(images/\ ui\ ux\ design\ .jpeg);
+    background-size: cover;
+    color: #ddd;
 }
 /**button**/
 
@@ -183,14 +188,23 @@ form button:hover{
     background-color: #555;
 }
 /*footer*/
-footer{
+.footer{
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+.footer p{
+    margin: 0;
+    font-size: 1rem;
+}
+.footer .social-icons a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+    color: aqua;
 }
 /*mobile(max width 768px)*/
 @media screen and (max-width:768px){
